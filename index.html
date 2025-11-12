@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Firstname Lastname — Resume</title>
+  <meta name="description" content="Resume for Firstname Lastname — summary, experience, education, projects, and skills">
+
+  <!-- ✅ Add this: CSS link -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <button class="theme-toggle" aria-label="Switch theme">
+  <span class="icon">🌙</span>
+  <span class="label">modes</span>
+</button>
+
+  <header id="home" class="header" role="banner">
+    <div class="container">
+      <!-- ✅ Correct image path (change later when you add actual image) -->
+      <img src="assets/profile.jpg" alt="Profile photo of Firstname Lastname" class="img" id="profile-image" width="120" height="120">
+      <div class="meta">
+        <h1 class="name">Amreetanshu Kumar Sinha</h1>
+        <p class="contact">
+          <a href="mailto:you@example.com" aria-label="Email Firstname Lastname">amreetanshusinha@example.com</a>
+          <span aria-hidden="true">•</span>
+          <a href="tel:+91 90044 28997" aria-label="Call Firstname Lastname">+91 90044 28997</a>
+        </p>
+        <p class="links">
+          <a href="#projects" class="btn">Projects</a>
+          <a href="#experience" class="btn">Experience</a>
+        </p>
+      </div>
+    </div>
+
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+
+    <section id="summary" class="section" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Summary</h2>
+      <p>Hey, this is Amreetanshu , Hope you are doing great!!</p>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+
+      <article class="card" aria-labelledby="exp1-title">
+        <h3 id="exp1-title">Job Title — Company Name</h3>
+        <p class="meta">Location • <time datetime="2023-05">May 2023</time> — <time datetime="2025-10">Present</time></p>
+        <ul>
+          <li>Primary responsibility or accomplishment one.</li>
+          <li>Primary responsibility or accomplishment two.</li>
+        </ul>
+      </article>
+
+      <article class="card" aria-labelledby="exp2-title">
+        <h3 id="exp2-title">Earlier Role — Previous Company</h3>
+        <p class="meta">Location • <time datetime="2021-01">Jan 2021</time> — <time datetime="2023-04">Apr 2023</time></p>
+        <ul>
+          <li>Notable contribution or project.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <article class="card" aria-labelledby="edu1-title">
+        <h3 id="edu1-title">Degree — Institution</h3>
+        <p class="meta">Field of study • <time datetime="2018">2018</time> — <time datetime="2021">2021</time></p>
+        <p>Relevant coursework, honours, or brief notes.</p>
+      </article>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <article class="card" aria-labelledby="proj1-title">
+        <h3 id="proj1-title">Project Name</h3>
+        <p class="meta">Tech: HTML, CSS, JavaScript</p>
+        <p>Short description of the project, problem solved, and your role.</p>
+        <p><a href="#" aria-label="Project repository or demo">Repository / Demo</a></p>
+      </article>
+
+      <article class="card" aria-labelledby="proj2-title">
+        <h3 id="proj2-title">Another Project</h3>
+        <p class="meta">Tech: Java, Spring</p>
+        <p>Short description and outcome or metrics if available.</p>
+      </article>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <p>Grouped skill areas with brief notes on experience level.</p>
+
+      <ul class="skills" role="list">
+        <li class="skill" data-prog="90" aria-label="JavaScript 90 percent">JavaScript <small aria-hidden="true">— 90%</small></li>
+        <li class="skill" data-prog="85" aria-label="Java 85 percent">Java <small aria-hidden="true">— 85%</small></li>
+        <li class="skill" data-prog="75" aria-label="React 75 percent">React <small aria-hidden="true">— 75%</small></li>
+        <li class="skill" data-prog="80" aria-label="HTML and CSS 80 percent">HTML &amp; CSS <small aria-hidden="true">— 80%</small></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ✅ Clean footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>© <time datetime="2025">2025</time> Amreetanshu kumar Sinha</p>
+    </div>
+  </footer>
+
+  <!-- ✅ Add this: JS script -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
